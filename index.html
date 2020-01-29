@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+</head>
+<body>
+	<script>		
+	
+  /*function christmasTree(height=5,symbol = "*") {
+	var tree = "";
+	if(symbol.length>1)
+		alert("Error");
+	else 	
+	for(var i = 0; i < height; i++ ) {			
+	  for(var j = 1; j <= (height - i); j++ ) {
+	  	tree += " ";
+	  }
+	  for(var k = 0; k < 2 * i + 1; k++) {
+	    tree += symbol;
+	  }		
+	  	tree += "\n"; 
+	  
+	  }
+	  return tree;
+	}
+	var result = christmasTree(5,"5");
+	alert(result);*/
+
+	function f (a=2, b=3, c) {
+		function sum() {
+			return a + b;
+		}
+		if(typeof c === 'function' ){
+			return c();
+		}	
+		return sum();
+	}
+	function number() {
+		return 2;
+	}
+	var result = f(5,5,number);
+	alert(result);
+	</script>
+</html>
+</body>
